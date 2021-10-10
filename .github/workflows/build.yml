@@ -1,4 +1,4 @@
-name: "PMod CC1101"
+name: "PCB and Software Build"
 
 on:
   push:
