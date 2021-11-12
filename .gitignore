@@ -4,7 +4,7 @@
 *gerber/
 *.csv
 *.xml
-gp-info-cache
+fp-info-cache
 *.pio.h
 
 build/
