@@ -1,8 +1,9 @@
 #include "pico/stdlib.h"
 
 int main() {
-	//initalise the output pins
-	setup_output();
+	//initalise the output pin
+	gpio_int(11);
+	gpio_set_dir(11, GPIO_OUT);
 
 	while(1){
 		gpio_put(11,1);
