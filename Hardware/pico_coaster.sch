@@ -776,17 +776,6 @@ F 3 "~" H 14850 1100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C6
-U 1 1 610C63D7
-P 15200 1100
-F 0 "C6" H 15250 1200 50  0000 L CNN
-F 1 "100n" H 15250 1000 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 15238 950 50  0001 C CNN
-F 3 "~" H 15200 1100 50  0001 C CNN
-	1    15200 1100
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR046
 U 1 1 610C63DD
 P 14850 1250
@@ -1357,7 +1346,7 @@ F 3 "" H 8900 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 10300 2500 0    50   Input ~ 0
-GPIO_24
+GPIO_11
 Text GLabel 3600 1200 0    50   Input ~ 0
 GPIO_25
 Wire Wire Line
@@ -4205,4 +4194,15 @@ Wire Wire Line
 	15450 5400 14700 5400
 Wire Wire Line
 	14700 5500 15450 5500
+$Comp
+L Device:C C6
+U 1 1 610C63D7
+P 15200 1100
+F 0 "C6" H 15250 1200 50  0000 L CNN
+F 1 "100n" H 15250 1000 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 15238 950 50  0001 C CNN
+F 3 "~" H 15200 1100 50  0001 C CNN
+	1    15200 1100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
