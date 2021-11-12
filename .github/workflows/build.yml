@@ -69,7 +69,7 @@ jobs:
         working-directory: project/Software/build
         shell: bash
         run: |
-          PICO_SDK_PATH=../../../pico-sdk cmake ..
+          PICO_SDK_PATH=../../pico-sdk cmake ..
           make
 
       - name: Retrieve results

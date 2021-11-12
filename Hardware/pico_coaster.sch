@@ -100,28 +100,6 @@ F 3 "" H 13450 5950 50  0001 C CNN
 	1    13450 5950
 	1    0    0    -1  
 $EndComp
-$Comp
-L Switch:SW_Push SW1
-U 1 1 60ECF6F5
-P 1700 8950
-F 0 "SW1" V 1700 9235 50  0000 C CNN
-F 1 "SW_Push" V 1600 9250 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" H 1700 9150 50  0001 C CNN
-F 3 "~" H 1700 9150 50  0001 C CNN
-	1    1700 8950
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Switch:SW_Push SW6
-U 1 1 60ED08D9
-P 1600 10250
-F 0 "SW6" H 1600 10535 50  0000 C CNN
-F 1 "SW_Push" H 1600 10444 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" H 1600 10450 50  0001 C CNN
-F 3 "~" H 1600 10450 50  0001 C CNN
-	1    1600 10250
-	0    -1   -1   0   
-$EndComp
 Text Notes 1600 9500 0    79   ~ 0
 Pico Run
 Text Notes 1550 8000 0    79   ~ 0
@@ -154,8 +132,6 @@ Wire Wire Line
 	1850 8150 1700 8150
 Wire Wire Line
 	1700 8150 1700 8300
-Wire Wire Line
-	1700 8600 1700 8750
 Text GLabel 1850 9800 2    51   Input ~ 0
 Pico_Run
 $Comp
@@ -169,10 +145,6 @@ F 3 "" H 1600 10650 50  0001 C CNN
 	1    1600 10650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1600 10650 1600 10450
-Wire Wire Line
-	1600 10050 1600 9800
 Wire Wire Line
 	1600 9800 1850 9800
 $Comp
@@ -514,40 +486,8 @@ Text GLabel 15450 3100 2    51   Input ~ 0
 GPIO_6
 Text GLabel 15450 3200 2    51   Input ~ 0
 GPIO_7
-Text GLabel 15450 3300 2    51   Input ~ 0
-GPIO_8
-Text GLabel 15450 3400 2    51   Input ~ 0
-GPIO_9
-Text GLabel 15450 3500 2    51   Input ~ 0
-GPIO_10
 Text GLabel 15450 3600 2    51   Input ~ 0
 GPIO_11
-Text GLabel 15450 3700 2    51   Input ~ 0
-GPIO_12
-Text GLabel 15450 3800 2    51   Input ~ 0
-GPIO_13
-Text GLabel 15450 4000 2    51   Input ~ 0
-GPIO_15
-Text GLabel 15450 3900 2    51   Input ~ 0
-GPIO_14
-Text GLabel 15450 4100 2    51   Input ~ 0
-GPIO_16
-Text GLabel 15450 4200 2    51   Input ~ 0
-GPIO_17
-Text GLabel 15450 4300 2    51   Input ~ 0
-GPIO_18
-Text GLabel 15450 4400 2    51   Input ~ 0
-GPIO_19
-Text GLabel 15450 4500 2    51   Input ~ 0
-GPIO_20
-Text GLabel 15450 4600 2    51   Input ~ 0
-GPIO_21
-Text GLabel 15450 4700 2    51   Input ~ 0
-GPIO_22
-Text GLabel 15450 4800 2    51   Input ~ 0
-GPIO_23
-Text GLabel 15450 4900 2    51   Input ~ 0
-GPIO_24
 Wire Wire Line
 	14700 2900 15450 2900
 Wire Wire Line
@@ -773,17 +713,6 @@ F 1 "100n" H 14900 1000 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 14888 950 50  0001 C CNN
 F 3 "~" H 14850 1100 50  0001 C CNN
 	1    14850 1100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C6
-U 1 1 610C63D7
-P 15200 1100
-F 0 "C6" H 15250 1200 50  0000 L CNN
-F 1 "100n" H 15250 1000 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 15238 950 50  0001 C CNN
-F 3 "~" H 15200 1100 50  0001 C CNN
-	1    15200 1100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1357,15 +1286,13 @@ F 3 "" H 8900 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 10300 2500 0    50   Input ~ 0
-GPIO_24
+GPIO_11
 Text GLabel 3600 1200 0    50   Input ~ 0
 GPIO_25
 Wire Wire Line
 	10400 2600 10400 2500
 Wire Wire Line
 	10400 2500 10300 2500
-Text GLabel 15450 5000 2    50   Input ~ 0
-GPIO_25
 Wire Wire Line
 	15450 5000 14700 5000
 Text Notes 9300 700  0    79   ~ 0
@@ -4189,14 +4116,6 @@ Wire Notes Line
 	11250 3500 8350 3500
 Wire Notes Line
 	9600 2100 9600 3500
-Text GLabel 15450 5200 2    50   Input ~ 0
-GPIO26
-Text GLabel 15450 5300 2    50   Input ~ 0
-GPIO27
-Text GLabel 15450 5400 2    50   Input ~ 0
-GPIO28
-Text GLabel 15450 5500 2    50   Input ~ 0
-GPIO29
 Wire Wire Line
 	15450 5200 14700 5200
 Wire Wire Line
@@ -4205,4 +4124,72 @@ Wire Wire Line
 	15450 5400 14700 5400
 Wire Wire Line
 	14700 5500 15450 5500
+$Comp
+L Device:C C6
+U 1 1 610C63D7
+P 15200 1100
+F 0 "C6" H 15250 1200 50  0000 L CNN
+F 1 "100n" H 15250 1000 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 15238 950 50  0001 C CNN
+F 3 "~" H 15200 1100 50  0001 C CNN
+	1    15200 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 61DB34E0
+P 1900 8850
+F 0 "J2" H 1980 8842 50  0000 L CNN
+F 1 "Conn_01x02" H 1980 8751 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 1900 8850 50  0001 C CNN
+F 3 "~" H 1900 8850 50  0001 C CNN
+	1    1900 8850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 61DB94D2
+P 1800 10200
+F 0 "J1" H 1880 10192 50  0000 L CNN
+F 1 "Conn_01x02" H 1880 10101 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 1800 10200 50  0001 C CNN
+F 3 "~" H 1800 10200 50  0001 C CNN
+	1    1800 10200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 8600 1700 8850
+Wire Wire Line
+	1700 8950 1700 9150
+Wire Wire Line
+	1600 9800 1600 10200
+Wire Wire Line
+	1600 10300 1600 10650
+NoConn ~ 15450 3300
+NoConn ~ 15450 3400
+NoConn ~ 15450 3500
+NoConn ~ 15450 3700
+NoConn ~ 15450 3800
+NoConn ~ 15450 3900
+NoConn ~ 15450 4000
+NoConn ~ 15450 4100
+NoConn ~ 15450 4200
+NoConn ~ 15450 4300
+NoConn ~ 15450 4400
+NoConn ~ 15450 4500
+NoConn ~ 15450 4600
+NoConn ~ 15450 4700
+NoConn ~ 15450 4800
+NoConn ~ 15450 4900
+NoConn ~ 15850 3350
+Text GLabel 15450 5200 2    51   Input ~ 0
+GPIO26
+Text GLabel 15450 5300 2    51   Input ~ 0
+GPIO27
+Text GLabel 15450 5400 2    51   Input ~ 0
+GPIO28
+Text GLabel 15450 5500 2    51   Input ~ 0
+GPIO29
+Text GLabel 15450 5000 2    51   Input ~ 0
+GPIO_25
 $EndSCHEMATC
