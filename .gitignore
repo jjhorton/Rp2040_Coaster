@@ -1,0 +1,10 @@
+.DS_Store
+*bak
+*.zip
+*gerber/
+*.csv
+*.xml
+gp-info-cache
+*.pio.h
+
+build/
