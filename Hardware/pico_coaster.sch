@@ -486,40 +486,8 @@ Text GLabel 15450 3100 2    51   Input ~ 0
 GPIO_6
 Text GLabel 15450 3200 2    51   Input ~ 0
 GPIO_7
-Text GLabel 15450 3300 2    51   Input ~ 0
-GPIO_8
-Text GLabel 15450 3400 2    51   Input ~ 0
-GPIO_9
-Text GLabel 15450 3500 2    51   Input ~ 0
-GPIO_10
 Text GLabel 15450 3600 2    51   Input ~ 0
 GPIO_11
-Text GLabel 15450 3700 2    51   Input ~ 0
-GPIO_12
-Text GLabel 15450 3800 2    51   Input ~ 0
-GPIO_13
-Text GLabel 15450 4000 2    51   Input ~ 0
-GPIO_15
-Text GLabel 15450 3900 2    51   Input ~ 0
-GPIO_14
-Text GLabel 15450 4100 2    51   Input ~ 0
-GPIO_16
-Text GLabel 15450 4200 2    51   Input ~ 0
-GPIO_17
-Text GLabel 15450 4300 2    51   Input ~ 0
-GPIO_18
-Text GLabel 15450 4400 2    51   Input ~ 0
-GPIO_19
-Text GLabel 15450 4500 2    51   Input ~ 0
-GPIO_20
-Text GLabel 15450 4600 2    51   Input ~ 0
-GPIO_21
-Text GLabel 15450 4700 2    51   Input ~ 0
-GPIO_22
-Text GLabel 15450 4800 2    51   Input ~ 0
-GPIO_23
-Text GLabel 15450 4900 2    51   Input ~ 0
-GPIO_24
 Wire Wire Line
 	14700 2900 15450 2900
 Wire Wire Line
@@ -1325,8 +1293,6 @@ Wire Wire Line
 	10400 2600 10400 2500
 Wire Wire Line
 	10400 2500 10300 2500
-Text GLabel 15450 5000 2    50   Input ~ 0
-GPIO_25
 Wire Wire Line
 	15450 5000 14700 5000
 Text Notes 9300 700  0    79   ~ 0
@@ -4150,14 +4116,6 @@ Wire Notes Line
 	11250 3500 8350 3500
 Wire Notes Line
 	9600 2100 9600 3500
-Text GLabel 15450 5200 2    50   Input ~ 0
-GPIO26
-Text GLabel 15450 5300 2    50   Input ~ 0
-GPIO27
-Text GLabel 15450 5400 2    50   Input ~ 0
-GPIO28
-Text GLabel 15450 5500 2    50   Input ~ 0
-GPIO29
 Wire Wire Line
 	15450 5200 14700 5200
 Wire Wire Line
@@ -4207,4 +4165,31 @@ Wire Wire Line
 	1600 9800 1600 10200
 Wire Wire Line
 	1600 10300 1600 10650
+NoConn ~ 15450 3300
+NoConn ~ 15450 3400
+NoConn ~ 15450 3500
+NoConn ~ 15450 3700
+NoConn ~ 15450 3800
+NoConn ~ 15450 3900
+NoConn ~ 15450 4000
+NoConn ~ 15450 4100
+NoConn ~ 15450 4200
+NoConn ~ 15450 4300
+NoConn ~ 15450 4400
+NoConn ~ 15450 4500
+NoConn ~ 15450 4600
+NoConn ~ 15450 4700
+NoConn ~ 15450 4800
+NoConn ~ 15450 4900
+NoConn ~ 15850 3350
+Text GLabel 15450 5200 2    51   Input ~ 0
+GPIO26
+Text GLabel 15450 5300 2    51   Input ~ 0
+GPIO27
+Text GLabel 15450 5400 2    51   Input ~ 0
+GPIO28
+Text GLabel 15450 5500 2    51   Input ~ 0
+GPIO29
+Text GLabel 15450 5000 2    51   Input ~ 0
+GPIO_25
 $EndSCHEMATC
