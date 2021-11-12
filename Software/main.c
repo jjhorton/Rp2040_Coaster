@@ -2,7 +2,7 @@
 
 int main() {
 	//initalise the output pin
-	gpio_int(11);
+	gpio_init(11);
 	gpio_set_dir(11, GPIO_OUT);
 
 	while(1){
