@@ -1,18 +1,7 @@
 name: "PCB and Software Build"
 
 on:
-  push:
-    paths:
-      - 'Hardware/*'
-      - 'Software/*'
-      - '.github/workflows/build.yml'
-      - 'kibot.yml'
-  pull_request:
-    paths:
-      - 'Hardware/*'
-      - 'Software/*'
-      - '.github/workflows/build.yml'
-      - 'kibot.yml'
+  pull_request
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
