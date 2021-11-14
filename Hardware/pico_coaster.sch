@@ -486,8 +486,6 @@ Text GLabel 15450 3100 2    51   Input ~ 0
 GPIO_6
 Text GLabel 15450 3200 2    51   Input ~ 0
 GPIO_7
-Text GLabel 15450 3600 2    51   Input ~ 0
-GPIO_11
 Wire Wire Line
 	14700 2900 15450 2900
 Wire Wire Line
@@ -4181,7 +4179,6 @@ NoConn ~ 15450 4600
 NoConn ~ 15450 4700
 NoConn ~ 15450 4800
 NoConn ~ 15450 4900
-NoConn ~ 15850 3350
 Text GLabel 15450 5200 2    51   Input ~ 0
 GPIO26
 Text GLabel 15450 5300 2    51   Input ~ 0
@@ -4192,4 +4189,43 @@ Text GLabel 15450 5500 2    51   Input ~ 0
 GPIO29
 Text GLabel 15450 5000 2    51   Input ~ 0
 GPIO_25
+Text GLabel 15450 3600 2    51   Input ~ 0
+GPIO_11
+$Comp
+L power:GND #PWR0168
+U 1 1 62410365
+P 8750 9600
+F 0 "#PWR0168" H 8750 9350 50  0001 C CNN
+F 1 "GND" H 8600 9500 50  0000 C CNN
+F 2 "" H 8750 9600 50  0001 C CNN
+F 3 "" H 8750 9600 50  0001 C CNN
+	1    8750 9600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J6
+U 1 1 6241036B
+P 8950 9150
+F 0 "J6" H 9030 9142 50  0000 L CNN
+F 1 "Conn_01x02" H 9030 9051 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 8950 9150 50  0001 C CNN
+F 3 "~" H 8950 9150 50  0001 C CNN
+	1    8950 9150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 8750 8750 9150
+Wire Wire Line
+	8750 9250 8750 9600
+$Comp
+L power:VBUS #PWR0169
+U 1 1 624447BD
+P 8750 8750
+F 0 "#PWR0169" H 8750 8600 50  0001 C CNN
+F 1 "VBUS" H 8765 8923 50  0000 C CNN
+F 2 "" H 8750 8750 50  0001 C CNN
+F 3 "" H 8750 8750 50  0001 C CNN
+	1    8750 8750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
