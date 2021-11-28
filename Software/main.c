@@ -27,6 +27,14 @@ static inline uint32_t urgb_u32(uint8_t r, uint8_t g, uint8_t b) {
 const int PIN_TX = 25;
 
 int main() {
+
+		const uint BUTTON_PINS[] = {26,27,28,29};
+
+		for(int x = 0; x<4; x++) {
+			gpio_init(BUTTON_PINS[x]);
+			gpio_set_dir(BUTTON_PINS[x], GPIO_IN);
+		}
+
     //set_sys_clock_48();
     stdio_init_all();
     puts("WS2812 Smoke Test");
@@ -41,14 +49,15 @@ int main() {
     int t = 0;
 		int len = 49;
 
+		for (int i = 0; i < (len); ++i) {
+				//put_pixel(urgb_u32(0, 0, 0));
+				put_pixel(0);
+		}
+		sleep_ms(100);
+
 		while(1) {
 
-			for (int i = 0; i < (len); ++i) {
-					//put_pixel(urgb_u32(0, 0, 0));
-					put_pixel(0);
-			}
-			sleep_ms(1000);
-
+			/*
 			for(uint8_t counter=0; counter<255; counter++)
 			{
 				int led_num = (len*counter/256)+1;
@@ -57,6 +66,32 @@ int main() {
 					}
 				sleep_ms(100);
 			}
+			*/
+			int my_test = 0;
+
+			for (int i = 0; i < (4); ++i) {
+				if(gpio_get(BUTTON_PINS[i])!=1){
+						my_test++;
+				}
+			}
+
+			if(my_test>2){
+				int red = rand() % 64;
+				int green = rand() % 64;
+				int blue = rand() % 64;
+
+				for (int i = 0; i < (len); ++i){
+					put_pixel(urgb_u32(red,green,blue));
+				}
+			}
+			else {
+				for (int i = 0; i < (len); ++i){
+					put_pixel(urgb_u32(0,0,0));
+				}
+			}
+
+			sleep_ms(100);
+
 		}
 
 }
