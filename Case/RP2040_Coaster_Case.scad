@@ -11,11 +11,17 @@ difference(){
         translate([0,0,2]) 
             cube([91,91,3],true);};
     }
-    {translate([38.5,-6.61,0])
+    {translate([40.5,-6.61,0])
         cube([15,10,3.2],true);
+        
+     translate([47.5,-6.61,-1])
+        cube([3,10,3.2],true);
         
      translate([46.5,-6.61,1])
         cube([3,12,5],true);
+        
+     translate([43,-6.61,0])
+        cube([5,30,2],true);
     }
     
 }
