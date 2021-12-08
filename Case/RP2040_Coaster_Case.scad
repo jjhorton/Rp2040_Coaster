@@ -5,16 +5,17 @@
 
 difference(){
     difference() {
-        cube([95,95,5],true);
+        translate([0,0,-0.5])
+            cube([95,95,7],true);
         {translate([0,0,0]) 
             cube([86,90,2],true);
         translate([0,0,2]) 
-            cube([91,91,3],true);};
+            cube([91,91,3.1],true);};
     }
-    {translate([40.5,-6.61,0])
+    {translate([40.5,-6.61,-0.5])
         cube([15,10,3.2],true);
         
-     translate([47.5,-6.61,-1])
+     translate([47.5,-6.61,-2])
         cube([3,10,3.2],true);
         
      translate([46.5,-6.61,1])
