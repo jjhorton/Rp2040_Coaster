@@ -1,0 +1,38 @@
+name: "Case STL"
+
+on:
+  push:
+    paths:
+      - '.github/workflows/case_stl.yml'
+      - 'Case/RP2040_Coaster_Case.scad'
+  pull_request:
+    paths:
+      - '.github/workflows/case_stl.yml'
+      - 'Case/RP2040_Coaster_Case.scad'
+
+jobs:
+  Create-STL:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+        with:
+          path: project
+
+      - name: Install deps
+        run: |
+          sudo apt update && sudo apt install openscad
+
+      - name: Create STL from OpenSCAD file
+        run: |
+          openscad -o mount_production.stl -D 'quality="production"' project/Case/RP2040_Coaster_Case.scad
+
+      - name: Retrieve results
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v2
+        with:
+          name: Case_STL_File
+          path: |
+            mount_production.stl
+          if-no-files-found: warn
