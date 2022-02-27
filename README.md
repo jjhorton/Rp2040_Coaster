@@ -30,4 +30,5 @@ For the case, using the OpenSCAD files in the repo, they are automatically conve
 ## License 
 
 Code: BSD-3-Clause
+
 PCB/3D Model: CERN Open Hardware Licence Version 2 - Permissive
