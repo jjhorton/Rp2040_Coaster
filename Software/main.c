@@ -1,4 +1,7 @@
 /**
+ * RP2040 Coaster code 
+ * WS2812 code base from https://github.com/raspberrypi/pico-examples
+ * Copyright (c) 2022 James Horton
  * Copyright (c) 2020 Raspberry Pi (Trading) Ltd.
  *
  * SPDX-License-Identifier: BSD-3-Clause
